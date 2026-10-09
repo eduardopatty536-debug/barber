@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-with, initial-scale=1.0">
         <meta name="description" content="barberia. reservas de horarios para cortes">
         <title>Barber-shop</title>
+        <link rel="stylesheet" href="estilos.css">
+        
     </head>
     <body>
         <header>
@@ -63,16 +65,13 @@
             <figure>
                 <img src="imagen1.jpg"            
                     alt="corte con diseño "              
-                    width=200" height="250"
-                    img src="imagen2.jpg"            
-                    alt="corte con diseño "              
-                    width=200" height="250">
+                    width=200" height=">
                 <figcaption>Cortes que Realizamos</figcaption>
             </figure>
         </section>    
         
         <section id="pedido">
-        <h2>Hacer un pedido</h2>
+        <h2>REGISTRATE</h2>
 
         <form action="/pedido" method="post">
 
@@ -102,27 +101,22 @@
           </fieldset>
 
           <fieldset>
-            <legend>Tu pedido</legend>
+            <legend>Registra tu hora de llegada</legend>
 
             <p>
-              <label for="producto">Producto</label>
+              <label for="hora">Apartir de</label>
 
-              <select id="producto" name="producto" required>
-                <option value="">Elige uno</option>
-                <option value="dia">Pan del día</option>
-                <option value="integral">Pan integral</option>
-                <option value="molde">Pan de molde</option>
+              <select id="hora" name="estilo" required>
+                <option value="">13:00</option>
+                <option value="dia">14:00</option>
+                <option value="integral">15:00</option>
+                <option value="molde">16:00</option>
               </select>
             </p>
 
-            <p>
-              <label for="cantidad">Cantidad</label>
-              <input type="number" id="cantidad" name="cantidad"
-                     min="1" max="100" value="1" required>
-            </p>
 
             <p>
-              <label for="fecha">Fecha de entrega</label>
+              <label for="fecha">PARA</label>
               <input type="date" id="fecha" name="fecha" required>
             </p>
 
@@ -138,7 +132,7 @@
             </p>
           </fieldset>
 
-          <button type="submit">Enviar pedido</button>
+          <button type="submit">REALIZAR RESERVA</button>
         </form>
       </section>
 
