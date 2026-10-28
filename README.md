@@ -1,7 +1,9 @@
-# [Nombre del proyecto]
+# [BARBER-SHOP]
 
 **Estudiante:** [Eduardo Patty Churqui]
+
 **Cliente:** [barber-shop]
+
 **URL publicada:** [DESPUES, PROXIMA SEMANA]
 
 ## Qué resuelve
@@ -49,3 +51,8 @@ para que combine con el negocio del cliente .. como sera una barberia los colore
 [Qué problema técnico te costó más y cómo lo resolviste. 
 
 Sé específico:  problema mayor que tuve fue el de organizar las tablas con el FLEXBOX opte por matener el diseño original por ahora de que este al lado izquierdo ]
+
+## HOY SE AÑADIO
+las carpetasd del render y mejoras en el codigo  para renderizar  en consola  diseño mejorado de la pagina web  
+un problema  por resolver que pueda realizarse la prueba en consola que aun no funciona
+se le pasara la carpeta completa de la PAGINA WEB al  DOCENTE para poder DEBUGEAR   

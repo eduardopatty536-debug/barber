@@ -1,0 +1,28 @@
+{
+  "_nota": "Datos de ejemplo para las demos y laboratorios del Día 12 en adelante. Sirven como respaldo cuando no hay internet: el código es idéntico, solo cambia la URL del fetch. Son ficticios y deliberadamente genéricos - tu proyecto usa los datos reales de TU cliente.",
+  "negocio": {
+    "nombre": "Panadería del Barrio",
+    "direccion": "Av. Principal 145",
+    "coordenadas": { "lat": -16.5, "lng": -68.15 },
+    "horario": { "apertura": "06:30", "cierre": "20:00", "dias": "Lunes a sábado" }
+  },
+  "categorias": ["Panes", "Salados", "Dulces", "Tortas", "Bebidas", "Lácteos"],
+  "productos": [
+    { "id": 1,  "nombre": "Pan del día",         "categoria": "Panes",   "precio": 0.50,   "unidad": "unidad", "stock": 120, "disponible": true,  "proveedor": null },
+    { "id": 2,  "nombre": "Marraqueta",          "categoria": "Panes",   "precio": 0.50,   "unidad": "unidad", "stock": 200, "disponible": true,  "proveedor": null },
+    { "id": 3,  "nombre": "Pan integral",        "categoria": "Panes",   "precio": 1.50,   "unidad": "unidad", "stock": 40,  "disponible": true,  "proveedor": null },
+    { "id": 4,  "nombre": "Pan de molde",        "categoria": "Panes",   "precio": 12.00,  "unidad": "unidad", "stock": 0,   "disponible": false, "proveedor": null },
+    { "id": 5,  "nombre": "Empanada de queso",   "categoria": "Salados", "precio": 3.50,   "unidad": "unidad", "stock": 30,  "disponible": true,  "proveedor": null },
+    { "id": 6,  "nombre": "Cuñapé",              "categoria": "Salados", "precio": 2.00,   "unidad": "unidad", "stock": 0,   "disponible": false, "proveedor": null },
+    { "id": 7,  "nombre": "Alfajor",             "categoria": "Dulces",  "precio": 4.00,   "unidad": "unidad", "stock": 50,  "disponible": true,  "proveedor": null },
+    { "id": 8,  "nombre": "Rosquete",            "categoria": "Dulces",  "precio": 1.00,   "unidad": "unidad", "stock": 60,  "disponible": true,  "proveedor": null },
+    { "id": 9,  "nombre": "Torta de chocolate",  "categoria": "Dulces",  "precio": 45.00,  "unidad": "unidad", "stock": 2,   "disponible": true,  "proveedor": null },
+    { "id": 10, "nombre": "Torta de cumpleaños", "categoria": "Tortas",  "precio": 120.00, "unidad": "unidad", "stock": 1,   "disponible": true,  "proveedor": null },
+    { "id": 11, "nombre": "Tres leches",         "categoria": "Tortas",  "precio": 60.00,  "unidad": "unidad", "stock": 3,   "disponible": true,  "proveedor": null },
+    { "id": 12, "nombre": "Selva negra",         "categoria": "Tortas",  "precio": 90.00,  "unidad": "unidad", "stock": 2,   "disponible": true,  "proveedor": null },
+    { "id": 13, "nombre": "Leche",               "categoria": "Lácteos", "precio": 6.00,   "unidad": "litro",  "stock": 25,  "disponible": true,  "proveedor": "Lácteos del Valle" },
+    { "id": 14, "nombre": "Yogurt",              "categoria": "Lácteos", "precio": 9.50,   "unidad": "litro",  "stock": 18,  "disponible": true,  "proveedor": "Lácteos del Valle" },
+    { "id": 15, "nombre": "Queso fresco",        "categoria": "Lácteos", "precio": 35.00,  "unidad": "kg",     "stock": 12,  "disponible": true,  "proveedor": "Lácteos del Valle" },
+    { "id": 16, "nombre": "Mantequilla",         "categoria": "Lácteos", "precio": 14.00,  "unidad": "unidad", "stock": 20,  "disponible": true,  "proveedor": "Lácteos del Valle" }
+  ]
+}

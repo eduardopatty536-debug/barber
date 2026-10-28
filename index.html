@@ -1,158 +1,438 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-with, initial-scale=1.0">
-        <meta name="description" content="barberia. reservas de horarios para cortes">
-        <title>Barber-shop</title>
-        <link rel="stylesheet" href="estilos.css">
-        
-    </head>
-    <body>
-        <header>
-            <h1>Barber-shop</h1>
-            <p> Reserva de Horarios</p>
-            <nav>
-                <ul>
-                    <li><a href="#SERVIVIO">SERVICIO</a></li>
-                    <li><a href="#horarios">HORARIOS</a></li>
-                    <li><a href="#contactos">CONTACTO </a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <section id="SERVICIO">
-                <h2>TE OFRECEMOS</h2>
-                <article>
-                    <h3>CORTES CLASICOS</h3>
-                    <p>Romano</p>
-                </article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Barber-Shop - Cortes clásicos, degradados modernos y diseños con navaja. Reserva tu cita online en Plaza 15 de Agosto.">
+  <title>Barber-Shop | Cortes & Estilo Masculino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
 
-                <article>
-                    <h3>CORTES MODERNOS</h3>
-                    <p>degrades -taper fades ,bajos,Medios, Altos</p>
-                </article>
+<body>
+  <!-- ── BARRA DE NAVEGACIÓN Y CABECERA PRINCIPAL ────────────────────────── -->
+  <header>
+    <div class="nav-contenedor">
+      <div class="marca">
+        <span class="logo-icono">💈</span>
+        <div class="marca-texto">
+          <h1>Barber-shop</h1>
+          <p class="subtitulo-marca">Reserva de Horarios</p>
+        </div>
+      </div>
 
-                <article>
-                    <h3>DISEÑOS</h3>
-                    <p>Diseños con navaja a eleccion</p>
-                </article>
-            </section>
-            
-            <section id="horarios">
-                <h2>HORARIOS</h2>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#SERVICIO">Servicios</a></li>
+          <li><a href="#precios-horarios">Tarifas & Horarios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#pedido">Reservar Cita</a></li>
+          <li><a href="#panel">Preguntas</a></li>
+          <li><a href="#CONTACTO">Contacto</a></li>
+        </ul>
+      </nav>
 
-                <p>Lunes a Viernes a partir de 13:00 PM a 19:00 PM</p>
-            </section>
+      <a href="#pedido" class="btn-reserva-nav">Agendar Turno</a>
+    </div>
 
-            <table>
-                <caption>Precios por Diseños</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">SERVICIO</th>
-                        <th scope="col">Precios</th>
-                        <th scope="col">disponible</th>
-                    </tr>                       
-                </thead>
-                <tbody>
-                    <tr><td>Cortes clasicos</td>  <td>Bs 15</td> <td>lunes a viernes</td>
-                    <tr><td>Cortes modernos</td>  <td>Bs 20</td> <td>lunes a viernes</td>
-                    <tr><td>diseños con navaja</td>  <td>Bs 30</td> <td>lunes a viernes</td>         
-                </body>
-            </table>
-            
-            <figure>
-                <img src="imagen1.jpg"            
-                    alt="corte con diseño "              
-                    width=200" height=">
-                <figcaption>Cortes que Realizamos</figcaption>
-            </figure>
-        </section>    
-        
-        <section id="pedido">
-        <h2>REGISTRATE</h2>
+    <!-- ── HERO / BANNER PRINCIPAL ── -->
+    <div class="hero-banner">
+      <div class="hero-insignia">✂️ Estilo & Precisión Profesional</div>
+      <h2 class="hero-titulo">Cortes de Precisión y Estilo Impecable</h2>
+      <p class="hero-descripcion">
+        Descubre la combinación perfecta entre la barbería clásica tradicional y las últimas tendencias urbanas. Agenda
+        tu cita en segundos sin filas ni demoras.
+      </p>
+      <div class="hero-acciones">
+        <a href="#pedido" class="btn-hero-primario">Reservar Cita Ahora</a>
+        <a href="#SERVICIO" class="btn-hero-secundario">Explorar Servicios</a>
+      </div>
+      <div class="hero-puntos">
+        <div class="punto-item">
+          <span class="punto-icono">⚡</span>
+          <span>Atención puntual</span>
+        </div>
+        <div class="punto-item">
+          <span class="punto-icono">🧼</span>
+          <span>Esterilización certificada</span>
+        </div>
+        <div class="punto-item">
+          <span class="punto-icono">⭐</span>
+          <span>Barberos expertos</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <form action="/pedido" method="post">
+  <main>
+    <!-- ── 1. SERVICIOS Y CATÁLOGO DINÁMICO ─────────────────────────────── -->
+    <section id="SERVICIO" class="seccion-bloque">
+      <div class="seccion-encabezado">
+        <span class="etiqueta-sub">Catálogo Interactivo</span>
+        <h2>NUESTROS SERVICIOS Y CORTES</h2>
+        <p class="seccion-intro">
+          Selecciona tu corte favorito. Puedes buscar por nombre o filtrar por categoría para reservar con un solo clic.
+        </p>
+      </div>
 
+      <div class="controles">
+        <div class="buscador-caja">
+          <span class="lupa-icono">🔍</span>
+          <input type="search" id="buscador" placeholder="Buscar corte o servicio (ej. Fade, Clásico, Navaja)..."
+            aria-label="Buscar servicio">
+        </div>
+
+        <div id="filtros">
+          <button type="button" class="activo" data-categoria="todos">Todos</button>
+          <button type="button" data-categoria="clasicos">Clásicos</button>
+          <button type="button" data-categoria="modernos">Modernos</button>
+          <button type="button" data-categoria="navaja">Diseños con navaja</button>
+        </div>
+
+        <span id="resultado" role="status" aria-live="polite"></span>
+      </div>
+
+      <!-- Aquí es donde render.js coloca dinámicamente las tarjetas de datos.js -->
+      <div id="lista-productos"></div>
+    </section>
+
+    <!-- ── 2. SECCIÓN COMBINADA: HORARIOS Y TABLA DE TARIFAS ───────────── -->
+    <section id="precios-horarios" class="seccion-bloque">
+      <div class="seccion-encabezado">
+        <span class="etiqueta-sub">Disponibilidad & Precios</span>
+        <h2>HORARIOS Y TARIFAS DE DISEÑO</h2>
+        <p class="seccion-intro">
+          Información clara y transparente para que planifiques tu visita con total comodidad.
+        </p>
+      </div>
+
+      <div class="horarios-precios-grid">
+        <!-- Tarjeta de Horarios -->
+        <article class="tarjeta-horarios" id="horarios">
+          <div class="tarjeta-icono-top">🕒</div>
+          <h3>HORARIOS DE ATENCIÓN</h3>
+          <div class="horario-destacado">
+            <span class="estado-abierto">● Abierto de Lunes a Viernes</span>
+            <p class="rango-horas">13:00 PM – 19:00 PM</p>
+          </div>
+          <p class="horario-detalle">
+            Atendemos de forma continua durante la tarde. Te recomendamos reservar con anticipación para garantizar tu
+            turno de manera prioritaria sin esperas.
+          </p>
+          <ul class="dias-lista">
+            <li>
+              <span>Lunes a Viernes:</span>
+              <strong>13:00 a 19:00 PM</strong>
+            </li>
+            <li>
+              <span>Sábados y Domingos:</span>
+              <span class="texto-previo">Consultas por teléfono</span>
+            </li>
+          </ul>
+          <a href="#pedido" class="btn-agendar-horario">Agendar para Hoy o Mañana</a>
+        </article>
+
+        <!-- Tarjeta de Tabla de Precios -->
+        <article class="tarjeta-tabla-contenedor">
+          <div class="tabla-cabecera">
+            <span class="tarjeta-icono-top">🏷️</span>
+            <h3>TARIFARIO POR DISEÑO</h3>
+          </div>
+          <table class="tabla-estilizada">
+            <caption>Precios de referencia por tipo de corte y diseño</caption>
+            <thead>
+              <tr>
+                <th scope="col">SERVICIO</th>
+                <th scope="col">PRECIO</th>
+                <th scope="col">DISPONIBILIDAD</th>
+              </tr>
+            </thead>
+            <tbody id="tabla">
+              <tr>
+                <td>
+                  <span class="servicio-nombre">Cortes clásicos</span>
+                  <span class="servicio-sub">Tijera o máquina ejecutiva</span>
+                </td>
+                <td><span class="insignia-precio">Bs 15</span></td>
+                <td><span class="insignia-disp">Lunes a Viernes</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="servicio-nombre">Cortes modernos</span>
+                  <span class="servicio-sub">Fade, degradados y texturizados</span>
+                </td>
+                <td><span class="insignia-precio">Bs 20</span></td>
+                <td><span class="insignia-disp">Lunes a Viernes</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="servicio-nombre">Diseños con navaja</span>
+                  <span class="servicio-sub">Líneas freestyle y tribales</span>
+                </td>
+                <td><span class="insignia-precio">Bs 30</span></td>
+                <td><span class="insignia-disp">Lunes a Viernes</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="nota-tabla">💡 Los precios pueden ajustarse según la complejidad y detalles adicionales solicitados.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── 3. GALERÍA DE ESTILOS ────────────────────────────────────────── -->
+    <section id="galeria" class="seccion-bloque">
+      <div class="seccion-encabezado">
+        <span class="etiqueta-sub">Portafolio</span>
+        <h2>GALERÍA DE TRABAJOS</h2>
+        <p class="seccion-intro">
+          Echa un vistazo a algunos de nuestros cortes y trabajos con navaja realizados en el salón.
+        </p>
+      </div>
+
+      <figure class="galeria-cortes">
+        <div class="foto-item">
+          <div class="foto-envoltorio">
+            <img src="imagen1.jpg" alt="Corte con diseño de navaja" width="300" height="350" loading="lazy">
+            <span class="foto-etiqueta">Arte en Navaja</span>
+          </div>
+          <figcaption>Diseños con navaja</figcaption>
+        </div>
+        <div class="foto-item">
+          <div class="foto-envoltorio">
+            <img src="imagen2.jpg" alt="Corte clásico degradado" width="300" height="350" loading="lazy">
+            <span class="foto-etiqueta">Tendencia Urbana</span>
+          </div>
+          <figcaption>Cortes modernos</figcaption>
+        </div>
+        <div class="foto-item">
+          <div class="foto-envoltorio">
+            <img src="imagen3.jpg" alt="Corte clásico ejecutivo" width="300" height="350" loading="lazy">
+            <span class="foto-etiqueta">Elegancia Clásica</span>
+          </div>
+          <figcaption>Cortes clásicos</figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ── 4. FORMULARIO DE RESERVA ────────────────────────────────────── -->
+    <section id="pedido" class="seccion-bloque seccion-reserva">
+      <div class="seccion-encabezado">
+        <span class="etiqueta-sub">Reserva Online</span>
+        <h2>REGISTRA TU CITA</h2>
+        <p class="seccion-intro">
+          Completa el formulario a continuación para apartar tu turno. Te contactaremos inmediatamente para confirmar.
+        </p>
+      </div>
+
+      <form action="/pedido" method="post" id="formulario-reserva" class="formulario-estilizado">
+        <div class="form-rejilla">
           <fieldset>
-            <legend>Tus datos</legend>
+            <legend>1. Tus datos de contacto</legend>
 
-            <p>
-              <label for="nombre">Nombre completo</label>
+            <div class="campo-fila">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Ej. Juan Pérez">
+            </div>
 
-              <input type="text" id="nombre" name="nombre"
-                     autocomplete="name" required>
-            </p>
+            <div class="campo-fila">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="nombre@correo.com">
+            </div>
 
-            <p>
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email"
-                     autocomplete="email" required>
-            </p>
-
-            <p>
-              <label for="telefono">Teléfono</label>
-
-              <input type="tel" id="telefono" name="telefono"
-                     autocomplete="tel" pattern="[0-9]{7,8}"
-                     title="7 u 8 dígitos, sin espacios">
-            </p>
+            <div class="campo-fila">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9]{7,8}"
+                title="7 u 8 dígitos, sin espacios" required placeholder="Ej. 70123456">
+            </div>
           </fieldset>
 
           <fieldset>
-            <legend>Registra tu hora de llegada</legend>
+            <legend>2. Detalles del servicio y horario</legend>
 
-            <p>
-              <label for="hora">Apartir de</label>
-
-              <select id="hora" name="estilo" required>
-                <option value="">13:00</option>
-                <option value="dia">14:00</option>
-                <option value="integral">15:00</option>
-                <option value="molde">16:00</option>
+            <div class="campo-fila">
+              <label for="servicio-elegido">Servicio o Corte *</label>
+              <select id="servicio-elegido" name="servicio" required>
+                <option value="">-- Selecciona un corte --</option>
+                <option value="Corte Clásico">Corte Clásico - Bs 35.00</option>
+                <option value="Corte Escolar">Corte Escolar - Bs 25.00</option>
+                <option value="Corte Ejecutivo">Corte Ejecutivo - Bs 40.00</option>
+                <option value="Corte Fade (Degradado)">Corte Fade (Degradado) - Bs 45.00</option>
+                <option value="Corte Undercut">Corte Undercut - Bs 45.00</option>
+                <option value="Corte Texturizado">Corte Texturizado - Bs 50.00</option>
+                <option value="Diseño Tribal">Diseño Tribal - Bs 20.00</option>
+                <option value="Línea Freestyle">Línea Freestyle - Bs 15.00</option>
               </select>
-            </p>
+            </div>
 
+            <div class="campo-fila-doble">
+              <div class="campo-fila">
+                <label for="hora">Hora de llegada *</label>
+                <select id="hora" name="hora" required>
+                  <option value="">-- Hora --</option>
+                  <option value="13:00">13:00 PM</option>
+                  <option value="14:00">14:00 PM</option>
+                  <option value="15:00">15:00 PM</option>
+                  <option value="16:00">16:00 PM</option>
+                  <option value="17:00">17:00 PM</option>
+                  <option value="18:00">18:00 PM</option>
+                  <option value="19:00">19:00 PM</option>
+                </select>
+              </div>
 
-            <p>
-              <label for="fecha">PARA</label>
-              <input type="date" id="fecha" name="fecha" required>
-            </p>
+              <div class="campo-fila">
+                <label for="fecha">Fecha de reserva *</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+            </div>
 
-
-            <p>
-
+            <div class="terminos-fila">
               <input type="checkbox" id="terminos" name="terminos" required>
-              <label for="terminos">Acepto que el pedido se confirma por teléfono</label>
-            </p>
+              <label for="terminos">Acepto que la reserva se confirma telefónicamente o por WhatsApp.</label>
+            </div>
           </fieldset>
+        </div>
 
-          <button type="submit">REALIZAR RESERVA</button>
-        </form>
+        <button type="submit" id="btn-submit-reserva" class="btn-enviar-reserva">
+          <span>REALIZAR RESERVA</span> ➔
+        </button>
+        <div id="alerta-reserva" class="mensaje-reserva" hidden></div>
+      </form>
+    </section>
+
+    <!-- ── 5. PANEL INTERACTIVO Y PREGUNTAS FRECUENTES ──────────────────── -->
+    <section id="panel" class="seccion-bloque">
+      <div class="seccion-encabezado">
+        <span class="etiqueta-sub">Atención al Cliente</span>
+        <h2>PANEL DE INFORMACIÓN Y PREGUNTAS</h2>
+        <p class="seccion-intro">
+          Respuestas a dudas habituales y avisos vigentes para tu visita.
+        </p>
+      </div>
+      <section id="remoto">
+        <h2>Catálogo del proveedor</h2>
+
+        <button type="button" id="cargar-fetch">Cargar con fetch</button>
+        <button type="button" id="cargar-jquery">Cargar con jQuery</button>
+        <button type="button" id="cargar-roto">Probar un error</button>
+
+        <p id="estado" role="status" aria-live="polite"></p>
+
+        <div id="lista-remota"></div>
       </section>
 
 
-        <main>
-            <aside>
-                <h2>¿Sabias Que?</h2>
-                <p>Antes de realizar cualquier corte , realizamos la limpieza y desinfeccion 
-                    de nuestras maquinas.. 
-        
-                <footer id="CONTACTO">
-                    <h2>CONTACTO</h2>_
-                    <address>
-                        plaza 15 de agosto<br>
-                        Telefono: 637 413 09
-                    </address>
-                        <p><small>&copy; 2026 Barber-shop</small></p>
-                </footer>
+      <div class="panel-acciones">
+        <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu-movil">
+          ☰ Menú Rápido de Secciones
+        </button>
+      </div>
 
+      <nav id="menu-movil" hidden>
+        <ul>
+          <li><a href="#SERVICIO">Servicios</a></li>
+          <li><a href="#precios-horarios">Horarios & Precios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#pedido">Reservar Cita</a></li>
+          <li><a href="#CONTACTO">Contacto</a></li>
+        </ul>
+      </nav>
 
+      <div id="acordeon">
+        <div class="item">
+          <button type="button" class="titulo" aria-expanded="false">¿Se requiere cita previa para atenderse?</button>
+          <div class="cuerpo" hidden>
+            <p>Atendemos por orden de llegada, pero agendar tu cita en esta web te garantiza tu turno sin tiempos de
+              espera innecesarios.</p>
+          </div>
+        </div>
+        <div class="item">
+          <button type="button" class="titulo" aria-expanded="false">¿Hacen diseños personalizados con navaja?</button>
+          <div class="cuerpo" hidden>
+            <p>¡Por supuesto! Puedes traer una fotografía del estilo, línea o tribal que te agrade y nuestros barberos
+              lo plasmarán con total precisión.</p>
+          </div>
+        </div>
+        <div class="item">
+          <button type="button" class="titulo" aria-expanded="false">¿Qué formas de pago aceptan?</button>
+          <div class="cuerpo" hidden>
+            <p>Aceptamos pagos en efectivo y transferencias rápidas y seguras mediante código QR de cualquier banco
+              nacional.</p>
+          </div>
+        </div>
+      </div>
 
-                    
-            
+      <div class="avisos-bloque">
+        <button type="button" id="mostrar-avisos" class="btn-avisos">Mostrar avisos del día</button>
+        <ul id="avisos">
+          <li hidden>🧼 <strong>Higiene estricta:</strong> Máquinas y tijeras desinfectadas y esterilizadas antes de
+            cada corte.</li>
+          <li hidden>🔥 <strong>Promoción especial:</strong> Corte Fade con diseño de línea de regalo los días viernes.
+          </li>
+          <li hidden>🕒 <strong>Horario habitual:</strong> Lunes a Viernes de 13:00 a 19:00 PM continuado.</li>
+        </ul>
+      </div>
+    </section>
 
-    </body>
+    <!-- ── 6. SECCIÓN ¿SABÍAS QUE? ──────────────────────────────────────── -->
+    <aside class="sabias-que-bloque">
+      <div class="sabias-icono">💡</div>
+      <div class="sabias-contenido">
+        <h3>¿Sabías Que?</h3>
+        <p>
+          Antes de realizar cualquier corte, efectuamos una completa limpieza, lubricación y desinfección de nuestras
+          máquinas y cuchillas para cuidar tu piel y salud capilar.
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- ── PIE DE PÁGINA / CONTACTO ───────────────────────────────────────── -->
+  <footer id="CONTACTO">
+    <div class="footer-contenedor">
+      <div class="footer-columna">
+        <h3>💈 Barber-Shop</h3>
+        <p>Especialistas en estética masculina, degradados limpios, perfilado de barba y diseños a navaja con la más
+          alta dedicación.</p>
+      </div>
+      <div class="footer-columna">
+        <h3>HORARIOS</h3>
+        <p>Lunes a Viernes: 13:00 - 19:00 PM</p>
+        <p class="footer-sub">Atención por reserva online y presencial</p>
+      </div>
+      <div class="footer-columna">
+        <h3>CONTACTO & UBICACIÓN</h3>
+        <address>
+          📍 Plaza 15 de agosto, La Paz, Bolivia<br>
+          📞 Teléfono / WhatsApp: <a href="tel:63741309" class="enlace-contacto">637 413 09</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-creditos">
+      <p><small>&copy; 2026 Barber-Shop. Todos los derechos reservados. Desarrollado con excelencia web.</small></p>
+    </div>
+  </footer>
+
+  <!-- jQuery para el panel y animaciones -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Scripts del proyecto -->
+  <script src="app.js"></script>
+  <script src="funciones.js"></script>
+  <script src="datos.js"></script>
+  <script src="render.js"></script>
+  <script src="eventos.js"></script>
+  <script src="jquery-comparado.js"></script>
+  <script src="jquery-panel.js"></script>
+  <script src="remoto.js"></script>
+  <script src="preferencias.js"></script>
+
+</body>
+
 </html>
-
